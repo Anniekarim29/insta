@@ -1,16 +1,35 @@
-# untitled1
+#  Instagram UI Clone (Flutter)
 
-A new Flutter project.
+A clean and responsive *Instagram UI Clone* built using Flutter framework.  
+This project is purely for UI practice and portfolio showcase — no backend integration yet.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+##  Features:
+- Login Screen
+- Home Feed Screen
+- Story View
+- Bottom Navigation Bar
+- Profile Screen
+- Clean responsive UI layout using Flutter widgets
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+##  Screenshots:
+
+| Login Screen | Home Screen |
+|:------------:|:------------|
+| ![Login](assets/screenshots/login.png) | ![Home](assets/screenshots/home.png) |
+
+
+
+##  How to Run:
+1. Clone the repository  
+2. Run flutter pub get  
+3. Launch on emulator or real device  
+4. Enjoy exploring the UI
+
+
+##  Note:
+This is a UI-only clone for learning and portfolio purposes — no backend functionality included.
+
+
