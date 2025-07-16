@@ -7,11 +7,16 @@ class SignUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Instagram style gradient background
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFFfeda75), Color(0xFFfa7e1e), Color(0xFFd62976), Color(0xFF962fbf), Color(0xFF4f5bd5)],
+            colors: [
+              Color(0xFFfeda75),
+              Color(0xFFfa7e1e),
+              Color(0xFFd62976),
+              Color(0xFF962fbf),
+              Color(0xFF4f5bd5)
+            ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -22,11 +27,8 @@ class SignUpScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Logo
                 Image.asset('assets/icons/logo.png', height: 200),
                 const SizedBox(height: 10),
-
-                // Instagram Text
                 const Text(
                   'Instagram',
                   style: TextStyle(
@@ -37,8 +39,6 @@ class SignUpScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 30),
-
-                // Email TextField
                 TextField(
                   decoration: InputDecoration(
                     hintText: 'Email address',
@@ -53,8 +53,6 @@ class SignUpScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 15),
-
-                // Password TextField
                 TextField(
                   obscureText: true,
                   decoration: InputDecoration(
@@ -70,8 +68,6 @@ class SignUpScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 25),
-
-                // SignUp Button
                 SizedBox(
                   width: double.infinity,
                   height: 50,
@@ -83,7 +79,8 @@ class SignUpScreen extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.push(
+                      // ✅ Replace navigation so back doesn't return to signup
+                      Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(builder: (_) => const HomeScreen()),
                       );
@@ -91,10 +88,7 @@ class SignUpScreen extends StatelessWidget {
                     child: const Text('Sign Up', style: TextStyle(fontSize: 16)),
                   ),
                 ),
-
                 const SizedBox(height: 20),
-
-                // Divider line
                 Row(
                   children: const [
                     Expanded(child: Divider(color: Colors.white, thickness: 1)),
@@ -105,10 +99,7 @@ class SignUpScreen extends StatelessWidget {
                     Expanded(child: Divider(color: Colors.white, thickness: 1)),
                   ],
                 ),
-
                 const SizedBox(height: 20),
-
-                // Already have account text
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -121,7 +112,7 @@ class SignUpScreen extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        // You can add Login Screen navigation here
+                        // Optional: navigate to login screen if you have one
                       },
                       child: const Text(
                         "Log in",

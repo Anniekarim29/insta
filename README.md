@@ -1,35 +1,44 @@
-#  Instagram UI Clone (Flutter)
+# Instagram UI Clone (Flutter)
 
-A clean and responsive *Instagram UI Clone* built using Flutter framework.  
-This project is purely for UI practice and portfolio showcase — no backend integration yet.
+A clean and responsive *Instagram UI Clone* built using the Flutter framework.  
+This project is designed purely for *UI practice* and *portfolio showcasing* — no backend integration yet.
 
 
-##  Features:
+
+##  Features
+
+- Splash Screen
 - Login Screen
-- Home Feed Screen
-- Story View
-- Bottom Navigation Bar
+- Home Feed UI
+- Story Section
 - Profile Screen
-- Clean responsive UI layout using Flutter widgets
+- Bottom Navigation Bar
+- Responsive layout using Flutter widgets
 
 
 
-##  Screenshots:
+##  Screenshots
 
-| Login Screen | Home Screen |
-|:------------:|:------------|
-| ![Login](assets/screenshots/login.png) | ![Home](assets/screenshots/home.png) |
-
-
-
-##  How to Run:
-1. Clone the repository  
-2. Run flutter pub get  
-3. Launch on emulator or real device  
-4. Enjoy exploring the UI
+| Splash Screen | Login Screen |             Home (Feed)              | Home (Posts) | Profile Screen |
+|:-------------:|:------------:|:------------------------------------:|:------------:|:--------------:|
+| ![Splash](assets/screenshots/splash.png) | ![Login](assets/screenshots/login.png) | ![Home](assets/screenshots/home.png) | ![Home2](assets/screenshots/home2.png) | ![Profile](assets/screenshots/profile.png) |
 
 
-##  Note:
-This is a UI-only clone for learning and portfolio purposes — no backend functionality included.
+
+##  How to Run
+
+1. Clone the repository
+2. Run flutter pub get
+3. Launch on emulator or real device
+4. Explore the complete Instagram-style UI!
 
 
+
+##  Note
+
+This is a *UI-only Flutter clone* for learning and showcasing purposes.  
+There is no backend authentication, storage, or real-time updates implemented.
+
+
+
+ *Feel free to star ⭐ this repo if it helps*

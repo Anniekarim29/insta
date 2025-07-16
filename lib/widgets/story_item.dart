@@ -9,13 +9,13 @@ class StoryItem extends StatelessWidget {
     super.key,
     required this.image,
     required this.name,
-    this.isUser = false, // Default false
+    this.isUser = false,
   });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 6),
       child: Column(
         children: [
           Container(
@@ -23,36 +23,42 @@ class StoryItem extends StatelessWidget {
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               gradient: isUser
-                  ? null
+                  ? const LinearGradient(
+                colors: [Colors.grey, Colors.grey], // user - grey border
+              )
                   : const LinearGradient(
                 colors: [
-                  Color(0xFFF58529),
-                  Color(0xFFDD2A7B),
-                  Color(0xFF8134AF),
-                  Color(0xFF515BD4),
+                  Color(0xFFfeda75),
+                  Color(0xFFfa7e1e),
+                  Color(0xFFd62976),
+                  Color(0xFF962fbf),
+                  Color(0xFF4f5bd5)
                 ],
-                begin: Alignment.topRight,
-                end: Alignment.bottomLeft,
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
               ),
             ),
-            child: CircleAvatar(
-              radius: 30,
-              backgroundColor: Colors.black,
+            child: Container(
+              padding: const EdgeInsets.all(2),
+              decoration: const BoxDecoration(
+                color: Colors.black,
+                shape: BoxShape.circle,
+              ),
               child: CircleAvatar(
-                radius: 28,
+                radius: 30,
                 backgroundImage: AssetImage(image),
               ),
             ),
           ),
-          const SizedBox(height: 5),
+          const SizedBox(height: 6),
           Text(
             name,
             style: const TextStyle(
               color: Colors.white,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.bold, // 👈 Bold the name
               fontSize: 12,
             ),
-          )
+          ),
         ],
       ),
     );
